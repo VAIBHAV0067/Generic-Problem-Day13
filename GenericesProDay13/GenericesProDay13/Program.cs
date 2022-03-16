@@ -39,9 +39,17 @@ namespace GenericesProDay13
                         break;
 
                     case 3:
-                        flag = false;
+                        Console.WriteLine("Enter first word, second word,third word");
+                        String first = Convert.ToString(Console.ReadLine());
+                        String second = Convert.ToString(Console.ReadLine());
+                        String third = Convert.ToString(Console.ReadLine());
+                        String result3 = Max.Computemaximum(first, second, third);
+                        Console.WriteLine("The maximum number is : " + result3);
                         break;
 
+                    case 4:
+                        flag = false;
+                        break;
                 }
             }
         }
