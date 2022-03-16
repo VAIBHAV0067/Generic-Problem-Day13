@@ -6,7 +6,22 @@ using System.Threading.Tasks;
 
 namespace GenericesProDay13
 {
-    internal class MaxNumberCheck
+    public class MaxNumberCheck
     {
+        public int Computemax(int firstnumber, int secondnumber, int thirdnumber)
+        {
+            if (firstnumber.CompareTo(secondnumber) > 0 && firstnumber.CompareTo(thirdnumber) > 0)
+            {
+                return firstnumber;
+            }
+            if (secondnumber.CompareTo(firstnumber) > 0 && secondnumber.CompareTo(thirdnumber) > 0)
+            {
+                return secondnumber;
+            }
+            else
+            {
+                return thirdnumber;
+            }
+        }
     }
 }
